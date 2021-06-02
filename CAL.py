@@ -16,3 +16,5 @@ elif (Key=="*"):
 
 else:
     Result=FirstNumber/SecondNumber
+
+print(Result)
