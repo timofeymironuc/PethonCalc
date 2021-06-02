@@ -1,7 +1,11 @@
-FirstNumber=int(input("First number"))
-SecondNumber=int(input("Second number"))
+print("This is calculator program")
 
-Key=input("Key")
+
+
+FirstNumber=int(input("Please enter first number"))
+SecondNumber=int(input("Please enter second number"))
+
+Key=input("Please enter operator")
 
 
 
@@ -14,7 +18,10 @@ elif (Key=="-"):
 elif (Key=="*"):
     Result=FirstNumber*SecondNumber
 
-else:
+elif(Key=="/"):
     Result=FirstNumber/SecondNumber
 
-print(Result)
+else:
+    print('You entered an incorrect symbol.')
+
+print('Result is ' + str( Result) + "." )
