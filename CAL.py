@@ -1,25 +1,36 @@
 print("This is calculator program")
 
-FirstNumber = float (input("Please enter first number"))
-SecondNumber = float (input("Please enter second number"))
-
-Key = input ("Please enter operator")
-
+MathProblem =  (input("Please enter any math problem"))
+Numbers = []
+Operators = []
 
 
-if (Key == "+"):
-    Result = FirstNumber + SecondNumber
+for i in MathProblem:
+    if (i == '-' or '+' or '*' or '/'):
+        Operators.add(i)
+        Numbers.add(Number)
+        Number=None
+        
+    else:
+        Number= int(str(Number)+i)
 
-elif (Key == "-"):
-    Result = FirstNumber - SecondNumber
+a=1
+Result=Numbers[0]
+while(a!=Operators.len):   
+    
+    if (Operators[a-1] == "+"):
+        Result = Result+Numbers[a]
 
-elif (Key == "*"):
-    Result = FirstNumber * SecondNumber
+    elif (Operators[a-1] == "-"):
+        Result = Result-Numbers[a]
 
-elif(Key == "/"):
-    Result = FirstNumber/SecondNumber
+    elif (Operators[a-1] == "*"):
+        Result = Result*Numbers[a]
 
-else:
-    print('You entered an incorrect symbol.')
+    elif(Operators[a-1] == "/"):
+        Result = Result/Numbers[a]
+        
+    a=a+1
+
 
 print('Result is ' + str( Result)  )
