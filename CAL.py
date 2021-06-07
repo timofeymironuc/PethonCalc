@@ -1,4 +1,4 @@
-import operator #библеотека для замены операторов
+import operator #библеотека для замены операторов командами
 
 print("This is calculator program")
 
