@@ -2,7 +2,7 @@ import operator #библеотека для замены операторов �
 
 a=True
 
-while(a==True){
+while(a==True):
     
     print("This is calculator program")
 
@@ -54,5 +54,3 @@ while(a==True){
     print('Countinue? y, n')
     if (input()=='n'):
         a=False
-
-}
